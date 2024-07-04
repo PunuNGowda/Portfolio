@@ -1,7 +1,7 @@
 import React from "react";
 import {
   
-  workImgFour
+  
   
  
 } from "../../assets";
@@ -38,11 +38,11 @@ const Projects = () => {
           /> */}
         </div>
         <div className="px-6">
-          <ProjectsCard
+          {/* <ProjectsCard
             title="Responsive website"
             category="E-commerce"
-            image={workImgFour}
-          />
+            image={}
+          /> */}
           {/* <ProjectsCard
             title="Grapic Design"
             category="Design"
