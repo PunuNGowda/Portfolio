@@ -11,7 +11,7 @@ import myPic from "../../assets/punu.JPG";
 
 const Left = () => {
   const [text] = useTypewriter({
-    words: ["Web Developer", "Full Stack Developer","Data Analytics"],
+    words: ["Web Developer", "Full Stack Developer","Data Analyst"],
     loop: true,
     typeSpeed: 30,
     deleteSpeed: 20,
