@@ -19,10 +19,7 @@ const AboutMe = () => {
             <span className="aboutRightLiSpan">Age:</span>
             23
           </li>
-          <li className="aboutRightLi">
-            <span className="aboutRightLiSpan">Residence:</span>
-            India
-          </li>
+          
           
           <li className="aboutRightLi">
             <span className="aboutRightLiSpan">Address:</span>

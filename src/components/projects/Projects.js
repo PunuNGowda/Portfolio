@@ -16,10 +16,10 @@ const Projects = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 lgl:gap-10">
         <div className="px-6">
           <ProjectsCard
-            title="Data analysis website"
-            category="Depression Detection from Tweets"
+            title="Data Analytics in StreamLit"
+            category="Sentiment Analysis from Tweets"
             image={main}
-            link="https://social-media-impact-on-mental-health.streamlit.app/"
+            link="https://sentiment-analysis-using-twitter.streamlit.app/"
           />
           {/* <ProjectsCard
             title="Business Card Design"
