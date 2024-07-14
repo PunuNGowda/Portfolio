@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FiMail} from "react-icons/fi";
 import CV from "../../assets/Punu_N_Gowda.pdf";
 
-import myPic from "../../assets/punu.JPG";
+import myPic from "../../assets/IMG_5652.jpg";
 
 const Left = () => {
   const [text] = useTypewriter({
