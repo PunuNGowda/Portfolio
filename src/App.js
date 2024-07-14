@@ -5,6 +5,7 @@ import RoundThree from "./components/roundDesigns/RoundThree";
 import RoundFour from "./components/roundDesigns/RoundFour";
 import RoundFive from "./components/roundDesigns/RoundFive";
 import Home from "./Home";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <RoundFour />
         <RoundFive />
       </div>
+      <SpeedInsights/>
     </div>
   );
 }
