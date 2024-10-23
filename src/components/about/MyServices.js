@@ -15,7 +15,7 @@ const MyServices = () => {
       />
       <ServicesCard
         icons={<SiAntdesign />}
-        title="Java Backend"
+        title="Java"
         subTitle="I have developed Backend Framework using Java Spring Boot"
       />
       <ServicesCard
@@ -26,7 +26,7 @@ const MyServices = () => {
       <ServicesCard
         icons={<FaAppStoreIos />}
         title="Database"
-        subTitle="I have knowledge about MySQL and MongoDB"
+        subTitle="I have knowledge about MySQL, PostgreSQL and MongoDB"
       />
     </div>
   );

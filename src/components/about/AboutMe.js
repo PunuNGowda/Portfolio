@@ -6,11 +6,12 @@ const AboutMe = () => {
       <div className="w-full md:w-1/2 text-zinc-400 px-6 border-r-[1px] border-r-zinc-800 flex items-center">
         <div className="py-6">
           <h2 className="font-semibold mb-1">Hello! My Name is Punu N Gowda</h2>
-          <p className="text-base leading-6 ">
-            I am a Student pursuing MCA at Acharya Institute of Technology.
-            My Primary Technical Skills are Java, Python, MySQL and React Native.
-            Currently Looking for Opportunity to improve my Skills and Experience.
-          </p>
+          <p className="text-base leading-6 text-justify">
+          I am Punu N Gowda, an MCA graduate with expertise in data analysis, visualization, and machine learning. 
+          I’ve worked on projects like building ML models for social media analysis and creating interactive dashboards using Power BI and SQL. 
+          With hands-on experience as a Data Analyst intern, I’m skilled in Python, Java, and SQL databases, and I thrive on using data to drive insights.
+</p>
+
         </div>
       </div>
       <div className="w-full md:w-1/2 p-6">

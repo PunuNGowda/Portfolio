@@ -5,13 +5,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
 import { FiMail} from "react-icons/fi";
-import CV from "../../assets/Punu_N_Gowda.pdf";
+import CV from "../../assets/Punu_N_Gowda_DA_resume.pdf";
 
 import myPic from "../../assets/IMG_5652.jpg";
 
 const Left = () => {
   const [text] = useTypewriter({
-    words: ["Web Developer", "Full Stack Developer","Data Analyst"],
+    words: ["Full Stack Developer","Data Analyst"],
     loop: true,
     typeSpeed: 30,
     deleteSpeed: 20,
@@ -77,6 +77,7 @@ const Left = () => {
             <button className="w-full h-full flex justify-center items-center gap-2">
               RESUME <BsCloudLightningFill />
             </button>
+            
           </a>
           
         </div>
