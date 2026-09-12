@@ -2,23 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
-// ── Auto-calculate age from birth year 2001 ──
-function calcAge() {
-  const today = new Date();
-  const birth = new Date(2001, 0, 1); // Update day/month if needed
-  let age = today.getFullYear() - birth.getFullYear();
-  const m = today.getMonth() - birth.getMonth();
-  if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
-  return age;
-}
-
-const age = calcAge();
-
 const infoItems = [
   { label: "Name",     value: "Punu N Gowda" },
-  { label: "Age",      value: `${age} years old` },
-  { label: "Role",     value: "Software Engineer" },
-  { label: "Company",  value: "TCS" },
+  { label: "Role",     value: "Full Stack Developer" },
+  { label: "Company",  value: "Tata Consultancy Services" },
   { label: "Location", value: "Bengaluru, India" },
   { label: "Status",   value: "Open to Opportunities", highlight: true },
 ];
@@ -53,14 +40,16 @@ const About = () => {
       {/* ── Bio ── */}
       <motion.div variants={itemVariants} className="flex flex-col gap-4">
         <p className="text-zinc-400 text-sm lgl:text-base leading-7">
-          I'm a <span className="text-white font-medium">Software Engineer at TCS</span> with
-          a passion for crafting clean, efficient, and scalable software. I thrive at the
-          intersection of great engineering and thoughtful design.
+          I'm a <span className="text-white font-medium">Full Stack Developer at TCS</span> with
+          one year of professional experience across healthcare and enterprise integration
+          domains. I build backend services in <span className="text-white font-medium">Java and Spring Boot</span> and
+          craft responsive frontends with <span className="text-white font-medium">React</span>.
         </p>
         <p className="text-zinc-400 text-sm lgl:text-base leading-7">
-          When I'm not writing code, I explore new technologies, contribute to side projects,
-          and share what I've learned with the community. I believe great software starts with
-          curiosity and ends with impact.
+          I've engineered a production full-stack algorithmic trading system and an offline
+          AI Code Analyser web platform, and I regularly work with AI-assisted development
+          tools like Claude, GitHub Copilot, and Cursor. Great software starts with curiosity
+          and ends with impact.
         </p>
       </motion.div>
 
@@ -87,9 +76,9 @@ const About = () => {
       {/* ── Stats ── */}
       <motion.div variants={itemVariants} className="grid grid-cols-3 gap-3">
         {[
-          { num: `${Math.max(new Date().getFullYear() - 2024, 1)}+`, label: "Years at TCS" },
+          { num: "1+",   label: "Year Experience" },
           { num: "10+",  label: "Projects Built" },
-          { num: "5+",   label: "Technologies" },
+          { num: "20+",  label: "Technologies" },
         ].map((s, i) => (
           <div
             key={i}
@@ -113,7 +102,7 @@ const About = () => {
             href={s.href}
             target="_blank"
             rel="noreferrer"
-            title={s.label}
+            aria-label={s.label}
             className="w-10 h-10 rounded-xl bg-[#111111] border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-designColor hover:border-designColor/50 transition-all duration-300 hover:-translate-y-1"
           >
             {s.icon}

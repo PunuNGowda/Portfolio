@@ -23,8 +23,8 @@ const Left = () => {
         <img
           className="w-full h-full object-cover rounded-2xl"
           src={myPic}
-          loading="priority"
-          alt="bannerImage"
+          loading="eager"
+          alt="Portrait of Punu N Gowda"
         />
       </div>
       <div className="w-full h-2/5 flex flex-col justify-between border-t-0 rounded-bl-xl rounded-br-xl">
@@ -35,36 +35,32 @@ const Left = () => {
             <Cursor cursorBlinking="false" cursorStyle="|" />
           </p>
           <div className="flex justify-center gap-2 mt-2">
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
             <a
               href="https://github.com/PunuNGowda"
               target="_blank"
-               rel="noreferrer"
-                className="hover:text-designColor duration-300 cursor-pointer text-xl"
-             >
+              rel="noreferrer"
+              aria-label="GitHub profile"
+              className="hover:text-designColor duration-300 cursor-pointer text-xl"
+            >
               <FaGithub />
-              </a>
-            </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+            </a>
             <a
-            href="https://linkedin.com/in/punungowda"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-designColor duration-300 cursor-pointer text-xl"
+              href="https://linkedin.com/in/punungowda"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn profile"
+              className="hover:text-designColor duration-300 cursor-pointer text-xl"
             >
               <FaLinkedin />
-              </a>
-            </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+            </a>
             <a
-            href="mailto:punungowda6@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-designColor duration-300 cursor-pointer text-xl"
+              href="mailto:punungowda6@gmail.com"
+              rel="noreferrer"
+              aria-label="Send an email"
+              className="hover:text-designColor duration-300 cursor-pointer text-xl"
             >
               <FiMail />
-              </a>
-            </span>
+            </a>
           </div>
         </div>
         <div className="flex h-14">

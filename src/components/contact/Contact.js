@@ -81,11 +81,19 @@ const Contact = () => {
           </p>
         </div>
         <div className="w-full lgl:w-1/2">
-          <p className="flex justify-between lgl:gap-6 w-full text-lg text-[#ccc] py-4 border-b-[1px] border-b-zinc-800">
+          <p className="flex gap-6 justify-between w-full text-lg text-[#ccc] py-4 border-b-[1px] border-b-zinc-800">
             <span className="bg-designColor text-gray-700 text-sm font-titleFont font-medium px-2 rounded-md flex items-center justify-center">
               Email:
             </span>
             punungowda6@gmail.com
+          </p>
+        </div>
+        <div className="w-full lgl:w-1/2">
+          <p className="flex gap-6 justify-between w-full text-lg text-[#ccc] py-4 border-b-[1px] border-b-zinc-800">
+            <span className="bg-designColor text-gray-700 text-sm font-titleFont font-medium px-2 rounded-md flex items-center justify-center">
+              Phone:
+            </span>
+            +91 63616 66694
           </p>
         </div>
       </div>
@@ -96,44 +104,68 @@ const Contact = () => {
             {successMsg}
           </p>
         ) : (
-          <form id="form" className="p-6 flex flex-col gap-6">
+          <form id="form" onSubmit={handleSend} className="p-6 flex flex-col gap-6">
             <div className="w-full flex flex-col lgl:flex-row gap-4 lgl:gap-10 justify-between">
-              <input
-                onChange={handleName}
-                value={clientName}
-                className={`${
-                  errClientName
-                    ? "border-red-600 focus-visible:border-red-600"
-                    : "border-zinc-600 focus-visible:border-designColor"
-                } w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 outline-none duration-300`}
-                type="text"
-                placeholder="Full Name"
-              />
-              <input
-                onChange={handleEmail}
-                value={email}
-                className={`${
-                  errEmail
-                    ? "border-red-600 focus-visible:border-red-600"
-                    : "border-zinc-600 focus-visible:border-designColor"
-                } w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 outline-none duration-300`}
-                type="email"
-                placeholder="Email Address"
-              />
+              <div className="w-full flex flex-col gap-1">
+                <label htmlFor="clientName" className="sr-only">
+                  Full Name
+                </label>
+                <input
+                  id="clientName"
+                  name="clientName"
+                  onChange={handleName}
+                  value={clientName}
+                  aria-invalid={errClientName}
+                  className={`${
+                    errClientName
+                      ? "border-red-600 focus-visible:border-red-600"
+                      : "border-zinc-600 focus-visible:border-designColor"
+                  } w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 outline-none duration-300`}
+                  type="text"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div className="w-full flex flex-col gap-1">
+                <label htmlFor="contactEmail" className="sr-only">
+                  Email Address
+                </label>
+                <input
+                  id="contactEmail"
+                  name="contactEmail"
+                  onChange={handleEmail}
+                  value={email}
+                  aria-invalid={errEmail}
+                  className={`${
+                    errEmail
+                      ? "border-red-600 focus-visible:border-red-600"
+                      : "border-zinc-600 focus-visible:border-designColor"
+                  } w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 outline-none duration-300`}
+                  type="email"
+                  placeholder="Email Address"
+                />
+              </div>
             </div>
-            <textarea
-              onChange={handleMessages}
-              value={messages}
-              className={`${
-                errMessages
-                  ? "border-red-600 focus-visible:border-red-600"
-                  : "border-zinc-600 focus-visible:border-designColor"
-              } w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 outline-none duration-300 resize-none`}
-              placeholder="Your Message"
-              rows="4"
-            ></textarea>
+            <div className="w-full flex flex-col gap-1">
+              <label htmlFor="messages" className="sr-only">
+                Your Message
+              </label>
+              <textarea
+                id="messages"
+                name="messages"
+                onChange={handleMessages}
+                value={messages}
+                aria-invalid={errMessages}
+                className={`${
+                  errMessages
+                    ? "border-red-600 focus-visible:border-red-600"
+                    : "border-zinc-600 focus-visible:border-designColor"
+                } w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 outline-none duration-300 resize-none`}
+                placeholder="Your Message"
+                rows="4"
+              ></textarea>
+            </div>
             <button
-              onClick={handleSend}
+              type="submit"
               className="text-base w-44 flex items-center gap-1 text-gray-200 hover:text-designColor duration-200"
             >
               Send Message{" "}

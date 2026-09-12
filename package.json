@@ -29,6 +29,11 @@
       "react-app/jest"
     ]
   },
+  "jest": {
+    "moduleNameMapper": {
+      "@vercel/speed-insights/react": "<rootDir>/src/test/vercelSpeedInsights.js"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
