@@ -1,12 +1,3 @@
-import main from "../assets/work/main-project.png";
-import vrinda from "../assets/work/dashboard-image.png";
-import madhav from "../assets/work/Madhav-store-dashboard.png";
-import creditCustomer from "../assets/work/Credit Card Customer Report_Dashboard.png";
-import creditTransaction from "../assets/work/Credit Card Transaction Report_Dashboard.png";
-import hr from "../assets/work/hr-analytics-dashboard.png";
-import nptel from "../assets/certificate/NPTEL CERTIFICATE.png";
-import internship from "../assets/certificate/Internship certidicate.png";
-
 export const profile = {
   name: "Punu N Gowda",
   role: "Full Stack Developer",
@@ -75,12 +66,7 @@ export const skillGroups = [
   { title: "Databases", skills: ["MySQL", "Redis", "TimescaleDB", "H2 Database"] },
   { title: "DevOps & Tools", skills: ["Git", "Maven", "CI/CD", "Linux", "Agile/Scrum", "Postman"] },
   { title: "Integration", skills: ["SAP CDC", "MuleSoft", "ServiceNow"] },
-  { title: "AI/ML Exposure", skills: ["LLM APIs", "RAG Pipelines", "Prompt Engineering", "Embeddings"] },
-];
-
-export const certificates = [
-  { title: "NPTEL Certificate", category: "NPTEL", image: nptel },
-  { title: "Internship Certificate", category: "Edunet Foundation", image: internship },
+  { title: "AI/ML Exposure", skills: ["LLM APIs", "RAG Pipelines", "Prompt Engineering", "Embeddings"]   },
 ];
 
 export const featuredProjects = [
@@ -123,44 +109,5 @@ export const featuredProjects = [
       "Real-time ML web app for sentiment classification achieving 85% accuracy, implementing Random Forest, KNN and Logistic Regression models with hyperparameter tuning and NLP preprocessing.",
     stack: ["Python", "Scikit-learn", "Pandas", "Streamlit", "NLP"],
     link: "https://sentiment-analysis-using-twitter.streamlit.app/",
-  },
-];
-
-export const analyticsProjects = [
-  {
-    title: "Vrinda Store Data Analysis",
-    category: "Data Analytics using Excel",
-    image: vrinda,
-    link: "https://github.com/PunuNGowda/Vrinda-Store",
-  },
-  {
-    title: "Madhav Store",
-    category: "Data Analytics using Power BI",
-    image: madhav,
-    link: "https://github.com/PunuNGowda/Madhav-Store-Sales",
-  },
-  {
-    title: "Credit Card Financial Dashboard",
-    category: "Data Analytics using Power BI",
-    image: creditCustomer,
-    link: "https://github.com/PunuNGowda/Credit-Card-Financial-Dashboard",
-  },
-  {
-    title: "HR Analytics",
-    category: "Data Analytics using Power BI",
-    image: hr,
-    link: "https://github.com/PunuNGowda/HR-Analytics",
-  },
-  {
-    title: "Twitter Sentiment Dashboard",
-    category: "Streamlit · Live",
-    image: main,
-    link: "https://sentiment-analysis-using-twitter.streamlit.app/",
-  },
-  {
-    title: "Credit Card Transaction Report",
-    category: "Data Analytics using Power BI",
-    image: creditTransaction,
-    link: "https://github.com/PunuNGowda/Credit-Card-Financial-Dashboard",
   },
 ];

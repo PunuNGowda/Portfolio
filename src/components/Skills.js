@@ -1,10 +1,10 @@
 import React from "react";
 import Section from "./Section";
-import { coreSkills, skillGroups, certificates } from "../data/portfolio";
+import { coreSkills, skillGroups } from "../data/portfolio";
 
 const Skills = () => {
   return (
-    <Section id="skills" eyebrow="Toolbox" title="Skills & Certifications">
+    <Section id="skills" eyebrow="Toolbox" title="Skills">
       <div className="grid gap-10 lg:grid-cols-5">
         <div className="lg:col-span-2">
           <h3 className="mb-5 font-titleFont text-lg font-semibold text-white">
@@ -56,30 +56,6 @@ const Skills = () => {
             ))}
           </div>
         </div>
-      </div>
-
-      <h3 className="mb-6 mt-14 font-titleFont text-lg font-semibold text-white">
-        Certifications
-      </h3>
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {certificates.map((c) => (
-          <div key={c.title} className="card group overflow-hidden">
-            <div className="aspect-[4/3] overflow-hidden bg-white/5">
-              <img
-                src={c.image}
-                alt={c.title}
-                loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-4">
-              <h4 className="font-titleFont text-sm font-semibold text-white">
-                {c.title}
-              </h4>
-              <p className="text-xs text-zinc-500">{c.category}</p>
-            </div>
-          </div>
-        ))}
       </div>
     </Section>
   );
