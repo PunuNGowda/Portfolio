@@ -1,16 +1,17 @@
 # Punu N Gowda — Portfolio
 
-Personal portfolio of **Punu N Gowda** — Full Stack Developer at Tata Consultancy Services (TCS) and Data Analyst, based in Bengaluru, India.
+Personal portfolio of **Punu N Gowda** — Full Stack Developer at Tata Consultancy Services (TCS), based in Bengaluru, India.
 
-Built with **React 18 + Create React App 5 + Tailwind CSS 3 + Framer Motion**.
+Built with **React 18 + Create React App 5 + Tailwind CSS 3**.
 
 ## Sections
 
-- **Home** — Intro card with photo, social links and CV download
-- **About** — Bio, background and quick stats
-- **Resume** — Professional experience (TCS, Anakin Technologies), education and technical skills
-- **Projects** — Professional full-stack work (trading system, AI code analyser, OneCIAM) and data-analytics dashboards
-- **Contact** — Email / phone details and a message form
+- **Hero** — Name, rotating roles, summary, photo, social links and CV download
+- **About** — Bio, quick facts and stats
+- **Experience & Education** — TCS, Anakin Technologies, MCA 9.4/10 and BSc
+- **Skills** — Languages, toolchain groups, certifications
+- **Projects** — Full-stack systems (trading system, AI code analyser, OneCIAM) and data-analytics dashboards
+- **Contact** — Email / phone / location and a message form
 
 ## Getting started
 
@@ -23,10 +24,11 @@ npm test         # run tests
 
 ## Deploy
 
-The app is a static CRA build — `npm run build` then serve the `build/` folder (e.g. on Vercel, Netlify or GitHub Pages).
+The app is a static CRA build — `npm run build` then serve the `build/` folder (deployed on Vercel).
 
 ## Tech notes
 
-- Tailwind config extends screens, fonts (Poppins / Montserrat), brand colors and decorative spin animations.
+- Tailwind config extends screens, fonts (Inter / Space Grotesk) and brand colors.
 - Fonts loaded from Google Fonts (preconnected in `public/index.html`).
 - Contact form posts to a Google Apps Script endpoint.
+- Vercel Speed Insights via `@vercel/speed-insights`.

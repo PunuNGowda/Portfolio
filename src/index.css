@@ -1,34 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink text-textColor font-bodyfont antialiased;
+  }
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+  ::selection {
+    @apply bg-designColor text-black;
+  }
+}
+
 @layer components {
-  .borderTop {
-    @apply border-t-[1px] border-t-zinc-800;
+  .container-x {
+    @apply w-full max-w-6xl mx-auto px-5 sm:px-8;
   }
-  .borderBottom {
-    @apply border-b-[1px] border-b-zinc-800;
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.25em] text-designColor;
   }
-  .borderRight {
-    @apply border-r-[1px] border-r-zinc-800;
+  .card {
+    @apply rounded-2xl border border-white/10 bg-surface;
   }
-  .borderLeft {
-    @apply border-l-[1px] border-l-zinc-800;
+  .chip {
+    @apply inline-flex items-center rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300 transition-colors duration-200;
   }
-  .borderAll {
-    @apply border-[1px] border-zinc-800;
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-200;
   }
-  /* ======================== About Me Start ========================== */
-  .aboutRightLi {
-    @apply text-zinc-400 text-base font-normal flex justify-between items-center border-b-[1px] border-gray-800 py-2;
+  .btn-primary {
+    @apply btn bg-designColor text-black hover:brightness-110;
   }
-  .aboutRightLiSpan {
-    @apply bg-designColor text-black uppercase px-4 py-[1px] rounded-md;
-  }
-  /* ======================== About Me End ============================ */
-  .sidenavLi{
-    @apply text-textColor border-b-[1px] border-b-zinc-500 py-4 text-base hover:text-designColor duration-300
+  .btn-ghost {
+    @apply btn border border-white/10 text-zinc-200 hover:border-designColor/60 hover:text-designColor;
   }
 }

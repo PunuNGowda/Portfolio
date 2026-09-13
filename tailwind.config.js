@@ -14,30 +14,20 @@ module.exports = {
         xl: "1280px",
       },
       fontFamily: {
-        bodyfont: ["Poppins", "sans-serif"],
-        titleFont: ["Montserrat", "sans-serif"],
+        bodyfont: ["Inter", "system-ui", "sans-serif"],
+        titleFont: ["'Space Grotesk'", "Inter", "sans-serif"],
       },
       colors: {
-        bodyColor: "#191919",
-        textColor: "rgba(255, 255, 255, 0.85)",
-        designColor: "#edff20",
-        titleRoundBg:
-          "linear-gradient(135deg,rgba(120,204,109,.15) 0%,rgba(120,204,109,1%) 100%)",
-      },
-      animation: {
-        "spin-slow": "spin 15s linear infinite",
-        "reverse-spin": "reverse-spin 15s linear infinite",
-      },
-      keyframes: {
-        "reverse-spin": {
-          from: {
-            transform: "rotate(360deg)",
-          },
-        },
+        ink: "#08090a",
+        surface: "#121316",
+        surface2: "#191a1e",
+        bodyColor: "#121316",
+        textColor: "rgba(255,255,255,0.85)",
+        designColor: "#e9ff5a",
       },
       boxShadow: {
-        greenShadow: "0px 0px 188px -14px rgba(237,255,32,1)",
-        testShwdow: "11px 0px 13px -15px rgba(0,0,0,1)",
+        glow: "0 0 80px -20px rgba(233,255,90,0.45)",
+        soft: "0 20px 60px -30px rgba(0,0,0,0.9)",
       },
     },
   },
